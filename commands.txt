@@ -1,0 +1,26 @@
+composer create-project laravel/laravel donateProject
+
+php artisan make:controller DonateController
+php artisan make:controller DonateController --resource
+
+php artisan route:list
+
+Route::resource('name','ControllerName');
+
+npm install 
+npm run dev
+npm run watch
+
+php artisan make:model Donner -m
+
+
+app -----> Provider ---->AppServiceProvider  ----> boot() ---> Schema::defaultStringLength(191) //it has to be 191 
+
+php artisan migrate
+
+php artisan tinker
+$doner = new App\Donner;
+$doner->name = 'Name 1';
+$doner->save();
+
+php artisan make:auth
